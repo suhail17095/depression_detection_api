@@ -1,7 +1,5 @@
 flask
-pickle
 pandas
 nltk
-warnings
 numpy
 gunicorn
