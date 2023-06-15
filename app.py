@@ -7,7 +7,7 @@ from nltk.corpus import stopwords
 import warnings 
 warnings.simplefilter('ignore')
 app = Flask(__name__)
-model = pickle.load(open('.\models\depression_detection_model', 'rb'))
+model = pickle.load(open('static/models/depression_detection_model', 'rb'))
 nltk.download('stopwords')
 stopwords=stopwords.words('english')
 
