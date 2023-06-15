@@ -5,8 +5,10 @@ import pandas as pd
 import nltk
 from nltk.corpus import stopwords
 import warnings 
+from flask_cors import CORS
 warnings.simplefilter('ignore')
 app = Flask(__name__)
+CORS(app)
 model = pickle.load(open('static/models/depression_detection_model', 'rb'))
 nltk.download('stopwords')
 stopwords=stopwords.words('english')
