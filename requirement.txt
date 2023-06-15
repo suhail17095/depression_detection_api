@@ -1,0 +1,6 @@
+flask
+pickle
+pandas
+nltk
+warnings
+numpy
