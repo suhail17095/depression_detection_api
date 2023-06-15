@@ -12,9 +12,9 @@ nltk.download('stopwords')
 stopwords=stopwords.words('english')
 
 #importing models
-stemmer= pickle.load(open('models/stem.pkl','rb'))
-count_vectorizer= pickle.load(open('models/transform.pkl','rb'))
-l= pickle.load(open('models/lr.pkl','rb'))
+stemmer= pickle.load(open('static/models/stem.pkl','rb'))
+count_vectorizer= pickle.load(open('static/models/transform.pkl','rb'))
+l= pickle.load(open('static/models/lr.pkl','rb'))
 
 
 def remove_stopwords(text):
